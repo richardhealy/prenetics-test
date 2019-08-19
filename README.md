@@ -8,7 +8,8 @@ Pulls in weather from openweathermap.org based on city location or lat / lon.
 
 ### Decisions:
 
-- Used redux and redux saga because it separates code with side effects nicley
+- Used React (with Hooks), redux and redux saga because it separates code with
+  side effects nicely.
 - If I had more time, I would break down Home component into smaller chunks as 
   I prefer to aim for Components that are around 50 lines of code for clarity
   and testings  purposes.
