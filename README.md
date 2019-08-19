@@ -2,7 +2,11 @@
 
 Pulls in weather from openweathermap.org based on city location or lat / lon.
 
-Decisions:
+### Demo: 
+
+(https://prenetics-test.firebaseapp.com/)[https://prenetics-test.firebaseapp.com/]
+
+### Decisions:
 
 - Used redux and redux saga because it separates code with side effects nicley
 - If I had more time, I would break down Home component into smaller chunks as 
@@ -15,6 +19,15 @@ Decisions:
   writing a lot more.
 - The Location plug was developed as a HOC, that can be wrapped around any 
   component that needed it. `./src/components/hoc`
+- Also includes React.lazy and Suspense. I would extend this out to use a 
+  better loading component for production.
+- I've also left the API key in `./src/api.js`. I would want to move this
+  into a config if I had more time.
+
+### Setup
+
+- Run: `yarn install`
+- Start: `yarn start`
 
 ### Uses:
 
@@ -30,11 +43,6 @@ Decisions:
 - Simple folder structure to quick project start
 - Pages Lazy loading out-the-box
 - Initially created  with CRA
-
-### Setup
-
-- Run: `yarn install`
-- Start: `yarn start`
 
 Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
